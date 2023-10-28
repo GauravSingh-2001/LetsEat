@@ -61,7 +61,7 @@ export default function Home() {
       </div>
             <div className='container'>
                 {
-                    foodCat !==[] 
+                    foodCat !==[]s 
                     ? foodCat.map((data)=>{
                         return(
                            <div className='row mb-3'>
