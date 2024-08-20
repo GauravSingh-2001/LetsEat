@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Let's Eat 🍽️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Let's Eat** is an online food ordering application built with the MERN stack. It offers a seamless experience for users to browse menus and place orders.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Sign up, log in, and manage profiles.
+- **Browse Menu**: View the menu with different categories.
+- **Search Functionality**: Search for specific dishes or restaurants.
+- **Add to Cart**: Add items to the cart and review the order before checkout.
+  
+## Screenshots
+![Home](/public/Screenshot(180).png)
+![search](/public/Screenshot(181).png)
+![Sign Up](/public/Screenshot(183).png)
+![Log in](/public/Screenshot(182).png)
+![Cart](/public/Screenshot(187).png)
+![Items in Cart](/public/Screenshot(186).png)
+![Ceckout](/public/Screenshot(188).png)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:**
+  - React
+  - Tailwind CSS
+  - BootStrap
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+- **Other Tools:**
+  - Git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- MongoDB
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/GauravSingh-2001/EasyMail.git
+   cd EasyMail
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Set up environment variables:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Create a `.env` file in the root directory and add your MongoDB connection string:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Run the application:**
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   The application will be available at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+- Browse the menu and place orders.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Dependencies
 
-### Analyzing the Bundle Size
+Here are the main dependencies used in this project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **[bcryptjs](https://www.npmjs.com/package/bcryptjs)** (^2.4.3): Library to hash passwords.
+- **[body-parser](https://www.npmjs.com/package/body-parser)** (^1.20.2): Node.js body parsing middleware.
+- **[cors](https://www.npmjs.com/package/cors)** (^2.8.5): Cross-Origin Resource Sharing middleware for Express.js.
+- **[dotenv](https://www.npmjs.com/package/dotenv)** (^16.4.5): Loads environment variables from a .env file into process.env.
+- **[express](https://www.npmjs.com/package/express)** (^4.19.2): Fast, unopinionated, minimalist web framework for Node.js.
+- **[express-validator](https://www.npmjs.com/package/express-validator)** (^7.1.0): Middleware for validating incoming request bodies in Express.js.
+- **[http-server](https://www.npmjs.com/package/http-server)** (^14.1.1): Simple HTTP server for serving static files.
+- **[jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)** (^9.0.2): JSON Web Token implementation for Node.js.
+- **[mongodb](https://www.npmjs.com/package/mongodb)** (^6.6.2): MongoDB driver for Node.js.
+- **[mongoose](https://www.npmjs.com/package/mongoose)** (^8.4.0): MongoDB object modeling tool for Node.js.
+- **[react](https://www.npmjs.com/package/react)** (^18.3.1): JavaScript library for building user interfaces.
+- **[react-dom](https://www.npmjs.com/package/react-dom)** (^18.3.1): DOM-specific methods for React.
+- **[react-icons](https://www.npmjs.com/package/react-icons)** (^5.2.1): Popular icon library for React applications.
+- **[react-router-dom](https://www.npmjs.com/package/react-router-dom)** (^6.23.1): DOM bindings for React Router.
