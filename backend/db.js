@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-// const mongoURI = 'mongodb+srv://foodproject:0WPnMxqKfTzkoWj1@cluster0.quidojz.mongodb.net/?retryWrites=true&w=majority'
-// const mongoURI = 'mongodb+srv://foodproject:0WPnMxqKfTzkoWj1@cluster0.quidojz.mongodb.net/?retryWrites=true&w=majority'
-const mongoURI = 'mongodb+srv://foodproject:0WPnMxqKfTzkoWj1@cluster0.quidojz.mongodb.net/fooditems?retryWrites=true&w=majority'
+const mongoURI = ''
 const mongodb = async () => {
     await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         if (err) {
